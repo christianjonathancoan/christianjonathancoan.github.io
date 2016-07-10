@@ -1,0 +1,17 @@
+﻿
+<ul id="menu">
+    <li data-menuanchor="Home"><a href="#Home">Home</a></li>
+    <li data-menuanchor="Work"><a href="#Work">Work</a></li>
+    <li data-menuanchor="Contact"><a href="#Contact">Contact</a></li>
+</ul>
+
+<div id="fullpage">
+    @Html.Partial("_about")
+    @Html.Partial("_work")
+    @Html.Partial("_contact")
+</div>
+
+@section ScriptsInFoot {
+    <script src="/Scripts/jquery.fullpage.js" type="text/javascript"></script>
+    <script src="/Scripts/portfolio.js" type="text/javascript"></script>
+}

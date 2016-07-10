@@ -1,15 +1,5 @@
 ﻿$(document).ready(function () {
     $("#fullpage").fullpage({
-        //Navigation
-        menu: "#menu",
-        lockAnchors: false,
-        anchors: ["Home", "Work", "Contact"],
-        navigation: false,
-        navigationPosition: "right",
-        showActiveTooltip: false,
-        slidesNavigation: true,
-        slidesNavPosition: "bottom",
-
         //Scrolling
         css3: true,
         autoScrolling: false,

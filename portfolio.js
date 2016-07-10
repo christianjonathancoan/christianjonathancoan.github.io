@@ -18,10 +18,10 @@
         //Accessibility
         keyboardScrolling: true,
         animateAnchor: true,
-        recordHistory: true,
+        recordHistory: false,
 
         //Design
         verticalCentered: true,
-        sectionsColor: ["#1bbc9b", "#4bbfc3", "#7baabe"]
+        sectionsColor: ["#1bbc9b"]
     });
 });

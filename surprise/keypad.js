@@ -45,6 +45,6 @@ function checkNumbers(value) {
 		window.location.href = "https://www.milsomhotels.com/maison-talbooth/accommodation/";
 	else {
 		clicked = false;
-          	alert("You have entered an invalid number");
+          	swal({   title: "Wrong!",   text: "You got it wrong!",   type: "error",   confirmButtonText: "OK" });
 	}
 }

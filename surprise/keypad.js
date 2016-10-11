@@ -4,25 +4,11 @@ $(function() {
   $(".content").click(function() {
     if (!clicked) {
       var value = $(this).find(".number").text();
-
-      if (value === ">") {
-        clicked = true;
+	    
+      if (value !== "<") {
+	clicked = true;
         var surpriseNumber = "";
         var counter = 0;
-        $(".numberinput")
-          .each(function() {
-            var a = $(this).text();
-            if (a) {
-              surpriseNumber += a;
-              counter += 1;
-            }
-          });
-	      
-	 if(counter === 4) 
-	 	checkNumbers(surpriseNumber);
-	 else
-		 clicked = false;
-      } else if (value !== "<") {
         $(".numberinput")
           .each(function() {
             var a = $(this).text();
@@ -30,8 +16,15 @@ $(function() {
               $(this).text(value);
               $(this).addClass("nocircle");
               return false;
+	      surpriseNumber += a;
+              counter += 1;
             }
           });
+	      
+	      	 if(counter === 4) 
+	 	checkNumbers(surpriseNumber);
+	 else
+		 clicked = false;
       } else {
         $($(".numberinput").get().reverse())
           .each(function() {

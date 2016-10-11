@@ -24,3 +24,8 @@ $(function () {
 		}
 	});
 });
+
+function CheckNumbers(value) {	
+	if(value === "blah")
+		window.location.href = "https://www.milsomhotels.com/maison-talbooth/accommodation/";
+}

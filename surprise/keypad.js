@@ -16,9 +16,11 @@ $(function() {
               $(this).text(value);
               $(this).addClass("nocircle");
               return false;
-	      surpriseNumber += a;
-              counter += 1;
-            }
+            } else {
+		surpriseNumber += a;
+              	counter += 1;    
+	    }
+	
           });
 	      
 	      	 if(counter === 4) 

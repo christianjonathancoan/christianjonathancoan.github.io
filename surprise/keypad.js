@@ -47,6 +47,7 @@ function checkNumbers(value) {
 		clicked = false;
 		$(".numberinput").each(function() {
             		$(this).text("");
+			$(this).removeClass("nocircle");
           	});
           	swal({   title: "Wrong!",   text: "You got it wrong!",   type: "error",   confirmButtonText: "OK" });
 	}

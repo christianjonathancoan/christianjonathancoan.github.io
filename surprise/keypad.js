@@ -41,7 +41,7 @@ $(function() {
 });
 
 function checkNumbers(value) {	
-	if(parseInt(value) === 4927)
+	if(parseInt(value) === 4967)
 		window.location.href = "https://www.milsomhotels.com/maison-talbooth/accommodation/";
 	else {
 		clicked = false;

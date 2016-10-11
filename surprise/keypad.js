@@ -49,6 +49,6 @@ function checkNumbers(value) {
             		$(this).text("");
 			$(this).removeClass("nocircle");
           	});
-          	swal({   title: "Wrong!",   text: "You got it wrong!",   type: "error",   confirmButtonText: "OK" });
+          	swal({   title: "Chin up!",   text: "Better luck next time!",   type: "error",   confirmButtonText: "OK" });
 	}
 }

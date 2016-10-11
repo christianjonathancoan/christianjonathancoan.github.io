@@ -1,10 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700);
 html, body {
   margin: 0;
   padding: 0;
   background-color: #FABE28;
   font-family: 'Open Sans', sans serif;
-  font-weight: 300;
+  font-weight: 700;
   -webkit-tap-highlight-color: transparent;
 }
 

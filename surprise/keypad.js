@@ -12,6 +12,8 @@ $(function() {
         $(".numberinput").each(function() {
             	var a = $(this).text();
             	if (!a) {
+			counter += 1;
+			surpriseNumber += a;
               		$(this).text(value);
               		$(this).addClass("nocircle");
 			return false;

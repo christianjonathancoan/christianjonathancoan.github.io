@@ -1,6 +1,6 @@
-$(function() {
-  var clicked = false;
+var clicked = false;
 
+$(function() {
   $(".content").click(function() {
     if (!clicked) {
       var value = $(this).find(".number").text();
@@ -10,19 +10,21 @@ $(function() {
         var surpriseNumber = "";
         var counter = 0;
         $(".numberinput").each(function() {
-            	var a = $(this).text();
-		surpriseNumber += a;
-		counter += 1;   
+            	var a = $(this).text(); 
             	if (!a) {
               		$(this).text(value);
               		$(this).addClass("nocircle");
-			if(counter === 4) 
+            	}
+		
+		surpriseNumber += a;
+		counter += 1;
+		
+          });
+	      
+	      			if(counter === 4) 
 	 			checkNumbers(surpriseNumber);
 	 		else
 		 		clicked = false;
-              		return false;
-            	} 
-          });
       } else {
         $($(".numberinput").get().reverse())
           .each(function() {

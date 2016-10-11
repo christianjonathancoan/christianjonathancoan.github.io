@@ -13,7 +13,7 @@ $(function() {
             	var a = $(this).text();
             	if (!a) {
 			counter += 1;
-			surpriseNumber += a;
+			surpriseNumber += value;
               		$(this).text(value);
               		$(this).addClass("nocircle");
 			return false;

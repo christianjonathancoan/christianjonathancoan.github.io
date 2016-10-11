@@ -10,21 +10,19 @@ $(function() {
         var surpriseNumber = "";
         var counter = 0;
         $(".numberinput").each(function() {
-            	var a = $(this).text(); 
+            	var a = $(this).text();
             	if (!a) {
               		$(this).text(value);
               		$(this).addClass("nocircle");
+			return false;
             	}
-		
-		surpriseNumber += a;
 		counter += 1;
-		
+		surpriseNumber += a;
           });
-	      
-	      			if(counter === 4) 
-	 			checkNumbers(surpriseNumber);
-	 		else
-		 		clicked = false;
+	      if(counter === 4) 
+	 	checkNumbers(surpriseNumber);
+	      else
+		clicked = false;
       } else {
         $($(".numberinput").get().reverse())
           .each(function() {

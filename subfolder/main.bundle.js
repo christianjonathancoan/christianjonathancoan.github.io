@@ -204,7 +204,7 @@ var AppService = (function () {
 var EmailService = (function () {
     function EmailService(http) {
         this.http = http;
-        this.emailUrl = "/api/email";
+        this.emailUrl = "http://bitsandbobs.azurewebsites.net/api/email";
     }
     EmailService.prototype.sendEmail = function (email) {
         var body = JSON.stringify(email);

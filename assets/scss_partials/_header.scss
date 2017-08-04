@@ -1,0 +1,127 @@
+header {
+  .logo {
+    margin: 0 auto;
+    max-width: 800px;
+
+    img {
+      padding: 20px 10px 0 10px;
+    }
+  }
+  .nav-container {
+    background-color: $white;
+    nav {
+      margin-top: 60px;
+      ul {
+        margin: 0;
+        padding: 15px 0;
+        list-style-type: none;
+        text-align: center;
+        width: 100%;
+        background-color: $white;
+
+        li {
+          display: inline-block;
+          margin-left: 20px;
+          &:first-child {
+            margin-left: 0;
+          }
+
+          a {
+            color: $primary;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+    .handle-container {
+      display: none;
+      width: 100%;
+      .handle {
+        width: 35px;
+        height: 23px;
+        border-bottom: 1px solid $primary;
+        margin: 0 auto;
+        border-left: 1px solid $primary;
+        border-right: 1px solid $primary;
+        cursor: pointer;
+
+        span {
+          width: 25px;
+          background-color: $primary;
+          display: block;
+          margin: 0 auto 0 auto;
+          padding: 1px;
+          position: relative;
+
+          &:nth-child(1) {
+            top: 4px;
+          }
+
+          &:nth-child(2) {
+            top: 8px;
+          }
+
+          &:nth-child(3) {
+            top: 12px;
+          }
+        }
+      }
+    }
+  }
+  .nav-container.fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+    nav {
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 620px) {
+  header {
+    .nav-container {
+      background-color: transparent;
+      nav {
+        margin-top: 20px;
+        border-top: 1px solid $primary;
+        ul {
+          height: 0;
+          overflow: hidden;
+          padding: 0;
+          li {
+            display: block;
+            margin: 0;
+
+            a {
+              display: block;
+              padding: 8px 10px;
+              text-align: left;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+      .handle-container {
+        display: block;
+      }
+    }
+    .nav-container.expanded {
+      ul {
+        height: auto;
+        overflow: auto;
+
+        li {
+          border-bottom: 1px solid $primary;
+        }
+      }
+    }
+
+    .nav-container.fixed {
+      nav {
+        border-top:0;
+      }
+    }
+  }
+}
